@@ -36,8 +36,8 @@
         <maven.compiler.argument.source>1.8</maven.compiler.argument.source>
 
         <!-- Arquillian -->
-        <version.arquillian.core>1.4.0.Final</version.arquillian.core>
-        <version.arquillian.drone>2.4.3</version.arquillian.drone>
+        <version.arquillian.core>1.7.0.Alpha10</version.arquillian.core>
+        <version.arquillian.drone>4.0.0-rc-2</version.arquillian.drone>
 
         <!-- Runtime dependencies -->
         <version.cglib>3.2.5</version.cglib>
@@ -68,6 +68,19 @@
         <system>jira</system>
         <url>https://issues.jboss.org/browse/ARQGRA</url>
     </issueManagement>
+
+    <repositories>
+        <repository>
+            <id>github-arquillian-drone</id>
+            <url>https://mabartos:&#103;hp_t8n4DdzcigHP0qeSqQVQ4jCpYnaGRI2vCJQ6@maven.pkg.github.com/mabartos/arquillian-extension-drone</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <dependencyManagement>
         <dependencies>
